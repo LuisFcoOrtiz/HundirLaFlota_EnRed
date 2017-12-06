@@ -28,14 +28,14 @@ Battleship local network game with TCP Sockets
 
 # Features
 Server
-* Start 2 threads to activate TCP sockets
+* Starts 2 threads to activate TCP sockets
 * Has 2 TCP ports to listen the movements (6000 and 6002)
 * (Partida) is the class with the game logic with synchronized methods
 * Threads access to the same resource (Turno) wich is synchronized with (wait()) and (notify()) methods, with this 2 player play orderly one time for each player
 
 Client
-* Start 1 thread to send the game movements
-* Start the client socket TCP to the host and port indicated
+* Starts 1 thread to send the game movements
+* Starts the client socket TCP to the host and port indicated
 * Send the data to create the (Partida) object for each player
 * Send the shoot possitions to shoot the other player
 
